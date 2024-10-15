@@ -12,6 +12,7 @@ public class App {
         // exit이 입력될 때 까지 루프
         while (!exit){
 
+
             System.out.println("첫 번째 숫자를 입력하세요 : ");
             double firstNumber = sc.nextDouble();
             System.out.println("두 번째 숫자를 입력하세요 : ");
