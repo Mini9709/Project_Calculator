@@ -2,7 +2,7 @@ package lv2_UseClassCalculator.operationClass;
 
 public class SquareOperation extends AbstractMonomialOperation{
 
-    public double operate(int firstNumber){
-        return firstNumber * firstNumber;
+    public double operate(Number firstNumber){
+        return firstNumber.doubleValue() * firstNumber.doubleValue();
     }
 }

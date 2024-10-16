@@ -6,9 +6,10 @@ import lv2_UseClassCalculator.operationClass.AbstractOperation;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Calculator {
-    private int firstNumber;
-    private int secondNumber;
+// 제네릭 사용 : Number 하위 클래스인 변수들은 전부 사용 가능
+public class Calculator<T extends Number> {
+    private T firstNumber;
+    private T secondNumber;
 
     private static Queue<Double> doubleQueue = new LinkedList<>();
     private AbstractOperation operation;
@@ -20,11 +21,11 @@ public class Calculator {
 
     public void setMonomialOperation(AbstractMonomialOperation monomialOperation) { this.monomialOperation = monomialOperation; }
 
-    public void setFirstNumber(int firstNumber) {
+    public void setFirstNumber(T firstNumber) {
         this.firstNumber = firstNumber;
     }
 
-    public void setSecondNumber(int secondNumber) {
+    public void setSecondNumber(T secondNumber) {
         this.secondNumber = secondNumber;
     }
 
