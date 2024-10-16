@@ -1,4 +1,4 @@
-package notUseClassCalculator;
+package lv1_NotUseClassCalculator;
 import java.util.Scanner;
 
 public class App {

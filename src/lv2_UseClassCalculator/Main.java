@@ -1,14 +1,13 @@
-package useClassCalculator;
+package lv2_UseClassCalculator;
 
 public class Main {
     public static void main(String[] args) {
-        boolean calculateEnded = false;
-        // 구현 2.
+
         CalculatorApp app = new CalculatorApp();
 
-        while (!calculateEnded) {
+        while (!app.getExit()) {
             try {
-                calculateEnded = app.start();
+                app.start();
             } catch(Exception e) {
                 System.out.println(e.getMessage());
             }

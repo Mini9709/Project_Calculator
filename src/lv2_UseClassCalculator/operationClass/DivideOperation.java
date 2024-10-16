@@ -1,6 +1,6 @@
-package useClassCalculator.operationClass;
+package lv2_UseClassCalculator.operationClass;
 
-import useClassCalculator.exceptionClass.BadOperationException;
+import lv2_UseClassCalculator.exceptionClass.BadOperationException;
 
 public class DivideOperation extends AbstractOperation{
 

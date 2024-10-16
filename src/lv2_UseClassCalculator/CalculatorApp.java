@@ -1,10 +1,16 @@
-package useClassCalculator;
+package lv2_UseClassCalculator;
 
 import java.util.Scanner;
 
 public class CalculatorApp {
 
-    public static boolean start() throws Exception{
+    private boolean exit = false;  //종료 여부 boolean 값
+
+    public boolean getExit(){
+        return exit;
+    }
+
+    public void start() throws Exception{
         Parser parser = new Parser();
         Scanner scanner = new Scanner(System.in);
 
@@ -28,8 +34,17 @@ public class CalculatorApp {
         }
 
         System.out.println("연산 결과 : " + parser.executeCalculator());
-        return true;
+
+        System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+        System.out.println("가장 먼저 저장된 데이터를 삭제하시겠습니까? (remove 입력 시 삭제)");
+        System.out.println("저장된 데이터를 출력하시겠습니까? (load 입력 시 종료)");
+        String nextInput = scanner.nextLine();
+
+        switch (nextInput){ // 종료, 제거, 출력 기능 구현
+            case "exit" -> {exit= true; System.out.println("계산을 종료합니다.");}
+            case "remove" -> {parser.removeNumber(); System.out.println("먼저 저장된 데이터를 삭제하였습니다.");}
+            case "load" -> {System.out.println(parser.getDoubleQueue().toString());}
+            default -> System.out.println("다시 계산합니다.");
+        }
     }
-
-
 }

@@ -1,12 +1,16 @@
-package useClassCalculator;
+package lv2_UseClassCalculator;
 
-import useClassCalculator.operationClass.AbstractMonomialOperation;
-import useClassCalculator.operationClass.AbstractOperation;
+import lv2_UseClassCalculator.operationClass.AbstractMonomialOperation;
+import lv2_UseClassCalculator.operationClass.AbstractOperation;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Calculator {
     private int firstNumber;
     private int secondNumber;
 
+    private static Queue<Double> doubleQueue = new LinkedList<>();
     private AbstractOperation operation;
     private AbstractMonomialOperation monomialOperation;
 
@@ -24,6 +28,8 @@ public class Calculator {
         this.secondNumber = secondNumber;
     }
 
+    public Queue<Double> getDoubleQueue() { return doubleQueue; }
+
     public double calculate(boolean monomial) { // 단항식 여부에 따라 다른 메서드 실행
         double answer = 0;
         if (monomial){
@@ -36,6 +42,11 @@ public class Calculator {
                 System.out.println(e.getMessage());
             }
         }
+        doubleQueue.add(answer);
         return answer;
+    }
+
+    public void removeNumber(){
+        this.doubleQueue.poll();
     }
 }

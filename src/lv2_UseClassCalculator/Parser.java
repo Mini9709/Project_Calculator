@@ -1,22 +1,31 @@
-package useClassCalculator;
+package lv2_UseClassCalculator;
 
-import useClassCalculator.exceptionClass.BadInputException;
-import useClassCalculator.operationClass.*;
+import lv2_UseClassCalculator.exceptionClass.BadInputException;
+import lv2_UseClassCalculator.operationClass.*;
+import lv3_ChallengeFunction.NumberType;
+import lv3_ChallengeFunction.OperatorType;
+
+import java.util.Queue;
 
 public class Parser {
-    private static final String OPERATION_REG = "[+\\-*/√^]";
-    private static final String NUMBER_REG = "^[0-9]*$";
+//    lv2 진행중에 사용한 상수값들
+//    private static final String OPERATION_REG = "[+\\-*/√^]";
+//    private static final String NUMBER_REG = "^[0-9]*$";
+
     private static boolean monomial = false; // 단항식인지 확인하는 boolean값
 
     private final Calculator calculator = new Calculator();
+
 
     public boolean getMonomial() {
         return monomial;
     }
 
+    // 각각의 입력값을 알맞는 타입으로 전환
     public void parseFirstNum(String firstInput) throws BadInputException {
-        // 구현 1.
-        if(!firstInput.matches(NUMBER_REG)) {
+
+        // enum 타입 메서드 추가
+        if(!NumberType.ONE.containsOfLabel(firstInput)) {
             throw new BadInputException("숫자");
         }
 
@@ -24,8 +33,8 @@ public class Parser {
     }
 
     public void parseSecondNum(String secondInput) throws BadInputException {
-        // 구현 1.
-        if(!secondInput.matches(NUMBER_REG)) {
+
+        if(!NumberType.ONE.containsOfLabel(secondInput)) {
             throw new BadInputException("숫자");
         }
 
@@ -33,8 +42,9 @@ public class Parser {
     }
 
     public void parseOperator(String operationInput) throws BadInputException {
-        // 구현 1.
-        if(!operationInput.matches(OPERATION_REG)) {
+
+        // enum 타입 메서드 추가
+        if(!OperatorType.ADDITION.containsOfLabel(operationInput)) {
             throw new BadInputException("연산기호");
         }
 
@@ -47,13 +57,20 @@ public class Parser {
 
             case "/" -> calculator.setOperation(new DivideOperation());
 
-            case "^" -> {calculator.setMonomialOperation(new ExponentationOperation()); monomial = true;}
+            case "^" -> {calculator.setMonomialOperation(new SquareOperation()); monomial = true;}
 
             case "√" -> {calculator.setMonomialOperation(new SquareRootOperation()); monomial = true;}
         }
     }
 
+
     public double executeCalculator() {
         return calculator.calculate(monomial);
     }
+
+    public void removeNumber(){
+        calculator.removeNumber();
+    }
+
+    public Queue<Double> getDoubleQueue() { return calculator.getDoubleQueue();}
 }

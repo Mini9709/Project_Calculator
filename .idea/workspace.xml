@@ -5,24 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad80e0e1-2b11-440b-8806-124c10444dd0" name="변경" comment="LV2 클래스를 사용한 계산기 : 사칙연산, 제곱, 제곱근 연산 기능 구현">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/CalculatorApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/exceptionClass/BadInputException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/exceptionClass/BadOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/operationClass/AbstractMonomialOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/operationClass/AbstractOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/operationClass/AddOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/operationClass/DivideOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/operationClass/ExponentationOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/operationClass/MultiplyOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/operationClass/SquareRootOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/useClassCalculator/operationClass/SubstractOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lv3_ChallengeFunction/ArithmeticCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lv3_ChallengeFunction/NumberType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lv3_ChallengeFunction/OperatorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notUseClassCalculator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notUseClassCalculator/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notUseClassCalculator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv1_NotUseClassCalculator/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/CalculatorApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/CalculatorApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/exceptionClass/BadInputException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/exceptionClass/BadInputException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/exceptionClass/BadOperationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/exceptionClass/BadOperationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/operationClass/AbstractMonomialOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/operationClass/AbstractMonomialOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/operationClass/AbstractOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/operationClass/AbstractOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/operationClass/AddOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/operationClass/AddOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/operationClass/DivideOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/operationClass/DivideOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/operationClass/ExponentationOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/operationClass/SquareOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/operationClass/MultiplyOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/operationClass/MultiplyOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/operationClass/SquareRootOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/operationClass/SquareRootOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/useClassCalculator/operationClass/SubstractOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2_UseClassCalculator/operationClass/SubstractOperation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,30 +35,31 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Mini9709"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mini9709&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Mini9709/Project_Calculator.git",
-    "accountId": "efae49c1-eea0-4384-962e-f115b0db14a9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mini9709/Project_Calculator.git&quot;,
+    &quot;accountId&quot;: &quot;efae49c1-eea0-4384-962e-f115b0db14a9&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2nSBbSWvtt79dFryBV5XLd1orcw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -77,21 +80,38 @@
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Mini/IdeaProjects/ProjectCalculator/src/Main.java",
     "vue.rearranger.settings.migration": "true",
-    "애플리케이션.Main.executor": "Run"
+    "애플리케이션.Main.executor": "Run",
+    "애플리케이션.lv3_ChallengeFunction.Main.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mini\IdeaProjects\ProjectCalculator\src\useClassCalculator" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lv3_ChallengeFunction" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="애플리케이션.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="useClassCalculator.Main" />
+      <option name="MAIN_CLASS_NAME" value="lv2_UseClassCalculator.Main" />
       <module name="ProjectCalculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="useClassCalculator.operationClass.*" />
+          <option name="PATTERN" value="lv3_ChallengeFunction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lv3_ChallengeFunction.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lv3_ChallengeFunction.Main" />
+      <module name="ProjectCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lv3_ChallengeFunction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,6 +122,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.lv3_ChallengeFunction.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +142,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728956671421</updated>
-      <workItem from="1728956672445" duration="12060000" />
+      <workItem from="1728956672445" duration="16526000" />
+      <workItem from="1729037587208" duration="11230000" />
     </task>
     <task id="LOCAL-00001" summary="LV1 클래스를 사용하지 않은 계산기">
       <option name="closed" value="true" />
@@ -131,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728956870429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LV2 클래스를 사용한 계산기 : 사칙연산, 제곱, 제곱근 연산 기능 구현">
+      <option name="closed" value="true" />
+      <created>1728987284293</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728987284293</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,16 +171,5 @@
     <MESSAGE value="LV1 클래스를 사용하지 않은 계산기" />
     <MESSAGE value="LV2 클래스를 사용한 계산기 : 사칙연산, 제곱, 제곱근 연산 기능 구현" />
     <option name="LAST_COMMIT_MESSAGE" value="LV2 클래스를 사용한 계산기 : 사칙연산, 제곱, 제곱근 연산 기능 구현" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/useClassCalculator/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

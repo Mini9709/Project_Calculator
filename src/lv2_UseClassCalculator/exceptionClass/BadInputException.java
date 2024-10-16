@@ -1,4 +1,4 @@
-package useClassCalculator.exceptionClass;
+package lv2_UseClassCalculator.exceptionClass;
 
 public class BadInputException extends Exception {
     public BadInputException(String type) {

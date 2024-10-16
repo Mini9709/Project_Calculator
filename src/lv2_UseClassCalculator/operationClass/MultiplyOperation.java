@@ -1,4 +1,4 @@
-package useClassCalculator.operationClass;
+package lv2_UseClassCalculator.operationClass;
 
 public class MultiplyOperation extends AbstractOperation {
 
