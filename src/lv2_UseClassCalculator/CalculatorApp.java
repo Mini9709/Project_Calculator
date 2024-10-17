@@ -80,7 +80,7 @@ public class CalculatorApp {
             case "exit" -> {exit= true; System.out.println("계산을 종료합니다.");}
             case "remove" -> {calculator.removeNumber(); System.out.println("먼저 저장된 데이터를 삭제하였습니다.");}
             case "load" -> {
-                System.out.println("어떤 데이터를 출력하시겠습니까?\n1. 첫 번째 데이터\n2. 모든 데이터\n3. 입력 값 보다 큰 데이터\n");
+                System.out.println("어떤 데이터를 출력하시겠습니까?\n1. 첫 번째 데이터\n2. 모든 데이터\n3. 현재 출력 값 보다 큰 데이터\n");
                 String selectOption = scanner.nextLine();
                 switch (selectOption){
                     case "1" -> System.out.println(calculator.getDoubleQueue().peek());
